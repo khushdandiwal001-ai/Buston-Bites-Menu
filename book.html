@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Buston Bites — Menu</title>
+
+        <!-- Bootstrap CSS (CDN) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body style="font-family:Times New Roman, Times, serif;">
+
+        <div class="container-fluid p-5 bg-danger text-white text-center">
+           <h1><img src="images/BustonBitesLogo.png"  alt="logo" width="60px" height="60px">
+               Buston Bites — Menu</h1>
+           <p>Crafted with Passion, Served with Love</p> 
+        </div>
+
+<!--Navbar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/BustonBitesLogo.png" style="width: 40px;height: 40px;" class="rounded-pill" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="starters.html">
+                        <button class="btn btn-danger" type="button">Starters</button>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="mains.html">
+                        <button class="btn btn-danger" type="button">Mains</button>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="deserts.html">
+                        <button class="btn btn-danger" type="button">Deserts</button>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="drinks.html">
+                        <button class="btn btn-danger" type="button">Drinks</button>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="download.html">
+                        <button class="btn btn-danger" type="button">Download Menu</button>
+                    </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-danger" type="button">Search</button>
+                </form>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+
+<!--Mains Body-->
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                 <form action="#">
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Enter your Name" name="Name" required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Mobile Number:</label>
+                        <input type="number" class="form-control" id="num" placeholder="Enter your Mobile Number" name="num" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Date:</label>
+                        <input type="date" class="form-control" id="Date" placeholder="Enter the Date" name="Date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Time:</label>
+                        <input type="time" class="form-control" id="Time" placeholder="Enter the Time" name="Time" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Number of Guests:</label>
+                        <input type="number" class="form-control" id="numgus" placeholder="Enter Number of guests" name="numgus" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment">Special Request:</label>
+                        <textarea class="form-control" rows="5" id="sp" name="text" placeholder="Add your Request(Optional)"></textarea>
+                    </div>
+                    <!-- Button to Open the Modal -->
+                        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Submit
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">✨ “Thank You for Booking with Buston Bites!”</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                “Your table reservation has been received.<br>
+                                We’re excited to serve you a memorable dining experience filled with flavors you’ll love.<br><br>
+
+                                📍 Location: Buston Bites, 123 Foodie Street<br>
+                                ⏰ We look forward to welcoming you at your chosen date & time.<br><br>
+
+                                If you have any special requests, feel free to contact us at +91 98765 43210.”<br>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+      </div>
+
+
+
+<!-- About and Contact Block-->        
+        <div class="container-fluid mt-5 p-5 bg-danger text-white text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3><img src="images/BustonBitesLogo.png"  alt="logo" width="60px" height="60px">
+                      Buston Bites — Menu</h3>
+                    <p>Crafted with Passion, Served with Love</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-1">
+                     <a class="navbar-brand" href="about.html">
+                    <h5>About Us</h5>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="col-sm-1">
+                    <a class="navbar-brand" href="contact.html">
+                    <h5>Contact Us</h5>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
